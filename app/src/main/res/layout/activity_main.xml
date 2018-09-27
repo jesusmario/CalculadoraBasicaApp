@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/text_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:text=""
+            android:textSize="40sp"
+            android:id="@+id/textview"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:text=""
+            android:textSize="40sp"
+            android:id="@+id/textview2"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="493dp"
+        android:layout_below="@id/text_layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnoff"
+                android:layout_width="95dp"
+                android:layout_height="72dp"
+                android:background="#676c7d"
+                android:text="OFF"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnmu"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#676c7d"
+                android:text="MU"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnporcentaje"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#676c7d"
+                android:text="%"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnraiz"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#676c7d"
+                android:text="√ "
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnsignos"
+                android:layout_width="100dp"
+                android:layout_height="72dp"
+                android:background="#676c7d"
+                android:text="+/-"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnmemoriamas"
+                android:layout_width="95dp"
+                android:layout_height="72dp"
+                android:background="#46506F"
+                android:text="M+"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnmemoriamenos"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#46506F"
+                android:text="M-"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnmr"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#46506F"
+                android:text="MR"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnmc"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#46506F"
+                android:text="MC"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btndividir"
+                android:layout_width="100dp"
+                android:layout_height="72dp"
+                android:background="#676c7d"
+                android:text="÷"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnc"
+                android:layout_width="95dp"
+                android:layout_height="72dp"
+                android:background="#676c7d"
+                android:text="C"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#445167"
+                android:text="7"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#445167"
+                android:text="8"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#445167"
+                android:text="9"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnmultiplicar"
+                android:layout_width="100dp"
+                android:layout_height="72dp"
+                android:background="#676c7d"
+                android:text="x"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnce"
+                android:layout_width="95dp"
+                android:layout_height="72dp"
+                android:background="#B18AA4"
+                android:text="CE"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#445167"
+                android:text="4"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#445167"
+                android:text="5"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#445167"
+                android:text="6"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnmenos"
+                android:layout_width="100dp"
+                android:layout_height="72dp"
+                android:background="#676c7d"
+                android:text="-"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnencender"
+                android:layout_width="95dp"
+                android:layout_height="72dp"
+                android:background="#B18AA4"
+                android:text="ON"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#445167"
+                android:text="1"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#445167"
+                android:text="2"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#445167"
+                android:text="3"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnmas"
+                android:layout_width="100dp"
+                android:layout_height="72dp"
+                android:background="#676c7d"
+                android:text="+"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnac"
+                android:layout_width="95dp"
+                android:layout_height="72dp"
+                android:background="#46506F"
+                android:text="AC"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#46506F"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnpunto"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#46506F"
+                android:text="."
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnigual"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#46506F"
+                android:text="="
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="72dp"
+                android:background="#676c7d"
+                android:text=""
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+
+
