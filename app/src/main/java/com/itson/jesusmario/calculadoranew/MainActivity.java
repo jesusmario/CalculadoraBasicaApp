@@ -1,20 +1,24 @@
 package com.itson.jesusmario.calculadoranew;
 
+import android.os.Message;
+import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import android.widget.Toast;
 import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
     private double subtotal = 0;
 Button boton0, boton1, boton2, boton3, boton4, boton5, boton6, boton7, boton8, boton9,
-    botonPunto, botonSumar, botonRestar, botonMultiplicacion, botonDividir, botonIgual, botonC, botonMasMenos, botonCE, botonOFF, botonmemoriamas;
+    botonPunto, botonSumar, botonRestar, botonMultiplicacion, botonDividir, botonIgual, botonC, botonCE, btnencender;
 
 String operacion;
+int valorInicial;
 
 TextView txtview1,txtview2;
 
@@ -134,9 +138,11 @@ TextView txtview1,txtview2;
         botonMultiplicacion = (Button) findViewById(R.id.btnmultiplicar);
         botonMultiplicacion.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+
                 subtotal = Double.valueOf((String) txtview2.getText()).doubleValue();
                 txtview2.setText("");
                 txtview1.setText("X");
+
             }
 
         });
@@ -182,15 +188,7 @@ TextView txtview1,txtview2;
 
         });
 
-        //Código del botón para M+
-        botonmemoriamas = (Button) findViewById(R.id.btnmemoriamas);
-        botonmemoriamas.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v){
-                subtotal = Double.valueOf((String) txtview2.getText()).doubleValue();
-                txtview2.setText("");
-                txtview1.setText("M");
-            }
-        });
+
 
 
         //Al presionar el boton C vacia todos los campos donde se han ingresado los datos.
@@ -204,6 +202,14 @@ TextView txtview1,txtview2;
 
         });
 
+        btnencender = (Button)findViewById(R.id.btnencender);
+        btnencender.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                    txtview1.setText("");
+            }
+        });
 
         //Representa el código de la función del botón CE donde se elimina el último digito tecleado en la calculadora.
         botonCE = (Button) findViewById(R.id.btnce);
@@ -221,31 +227,9 @@ TextView txtview1,txtview2;
 
         });
 
-        //Al presionar el boton OFF simula un apagado de la calculadora.
-        botonOFF= (Button) findViewById(R.id.btnoff);
-        botonOFF.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                subtotal = 0;
-                txtview2.setText("");
-                txtview1.setText("");
-            }
 
-        });
 
-        //Representación del funcionamiento de los cambios de signos en la calculadora.
-        botonMasMenos = (Button) findViewById(R.id.btnsignos);
-        botonMasMenos.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                if (txtview2.getText().charAt(0) == '-')
-                    txtview2.setText(txtview2.getText().subSequence(1, txtview2.getText().length() - 1));
-
-                else
-                    txtview2.setText("-" + txtview2.getText().toString());
-
-            }
-        });
 
     }
 }

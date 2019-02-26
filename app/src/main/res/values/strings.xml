@@ -1,3 +1,27 @@
 <resources>
-    <string name="app_name">CalculadoraNew</string>
+    <string name="app_name">Calculadora básica - Mario Torres</string>
+    <string name="btn_c">c</string>
+    <string name="btn_ce">ce</string>
+    <string name="btn_restar">-</string>
+    <string name="btn_ac">ac</string>
+    <string name="num_7">7</string>
+    <string name="num_8">8</string>
+    <string name="num_9">9</string>
+    <string name="num_4">4</string>
+    <string name="num_5">5</string>
+    <string name="num_6">6</string>
+    <string name="num_1">1</string>
+    <string name="num_2">2</string>
+    <string name="num_3">3</string>
+    <string name="num_cero">0</string>
+    <string name="btn_punto">.</string>
+    <string name="btn_igual">=</string>
+    <string name="btn_division">÷</string>
+    <string name="btn_ON">ON</string>
+    <string name="btn_x">X</string>
+
+
+
+
+
 </resources>
